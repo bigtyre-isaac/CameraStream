@@ -2,6 +2,8 @@
 
 An ASP.NET Core (.NET 6) application that reads MJPEG camera feeds and serves them as browser-viewable MJPEG streams and individual JPEG snapshots. The home page displays all configured cameras.
 
+**Status:** This project is no longer in active development.
+
 ## Getting started
 
 1. Install the .NET 6 SDK.
@@ -32,3 +34,7 @@ An ASP.NET Core (.NET 6) application that reads MJPEG camera feeds and serves th
 - `/api/cameras/{cameraId}/snapshot` — latest JPEG frame.
 
 Camera IDs start at **1** and follow the order in the `Cameras` array. Frames are refreshed from the source feeds at 10 FPS; stream responses send the latest frame at approximately 30 FPS.
+
+## License
+
+[MIT](LICENSE)
